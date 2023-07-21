@@ -1,0 +1,174 @@
+:root {
+    --fonte-principal:"Merriweather";
+    --cor-de-fundo-cabecalho:#ffe3bb;
+    --cor-de-fundo-paginas:#fff4e7;
+    --cor-da-fonte-titulos:#b65c10;
+    --cor-de-fundo-cards:#fae6c9;
+    --cor-de-fundo-fotter:#fce3bb;
+}
+
+header{
+    background-color: var(--cor-de-fundo-cabecalho);
+}
+
+.cabecalho{
+    display: flex;
+    align-items: top;
+    justify-content:space-between;
+    position: relative;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.cabecalho-menu{
+    width: 3em;
+    height: 3em;
+    padding: 1em 0.2em;
+}
+
+.lista-menu{
+    margin: none;
+    display: none;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 0px 6px 8px 8px;
+    background-color: var(--cor-de-fundo-cabecalho)
+
+}
+
+.botao-exit-menu{
+    padding-left: 8em;
+}
+
+.icone-home{
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 3px;
+    padding-right: 4px;
+}
+.icone-produtos{
+    height: 1.2em;
+    width: 1.2em;
+    margin-left: 5px;
+    padding-right: 4px;
+}
+
+.icone-contato{
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 3px;
+}
+
+#botao-menu{
+    display:none;
+}
+
+.botao-exit-menu{
+    display: inline;
+}
+
+.lista-menu-item{
+    margin: none;
+    display: flex;
+    margin: 0.4em 0.8em;
+}
+
+#botao-menu:checked ~ .lista-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+.lista-menu-link{
+    align-self: center;
+    justify-self: center;
+    text-decoration: none;
+    color: black;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+
+.imagem-menu{
+    align-self: center;
+    width: 5em;
+    height: 7.8em;
+    padding: 1em 0.3em 0.1em 0.3em
+}
+
+.cabecalho-logo{
+    width: 7em;
+    height: 7.5em;
+    padding: 1em 0;
+}
+
+.cabecalho-insta{
+    width: 3.5em;
+    height: 3.5em;
+    padding: 1em 0.2em;
+}
+
+body{
+    background-color: var(--cor-de-fundo-paginas);
+}
+
+header{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.descricao-produtos{
+    border: 2px solid black;
+    margin: 1em 0.4em 1em 0.4em;
+}
+
+.paragrafos{
+    text-align: center;
+    padding:0 1em 1em 1em;
+}
+
+.titulo-produtos{
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--cor-da-fonte-titulos);
+    margin: 0.3em 0.1em;
+}
+
+.paragrafo-texto{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.4em;
+    padding: 0.6em 0.2em;
+}
+
+.paragrafo-img{
+    width: 97%;
+    border: 4px solid var(--cor-da-fonte-titulos);
+}
+
+
+.img-banner-amarelato-rodape{
+    width: 100%;
+}
+
+.rodape-pagina{
+    background-color: var(--cor-de-fundo-fotter);
+    padding:1em;
+    text-align: center;
+    border-bottom: 4px solid black;
+    border-top:4px solid black;
+}
+
+.copyright-texto{
+    margin: 1em 0;
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+}

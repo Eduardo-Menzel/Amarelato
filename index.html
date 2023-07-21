@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amarelato | Home</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <input type="checkbox" name="menu" id="botao-menu">
+            <label for="botao-menu">
+            <span><img class="cabecalho-menu" src="Img/MenuIcon.svg" alt="Icone de Menu"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-item botao-exit-menu">
+                    <label for="botao-menu">
+                        <img class="botao-exit-menu-imagem" src="Img/Xicon.png" alt="Botão de Exit">
+                    </label>
+                </li>
+                <li class="lista-menu-item"><img class="icones-menu icone-home" src="Img/homeicon.svg" alt="Icone de Home"> <a href="index.html" class="lista-menu-link">Home</a></li>
+                <li class="lista-menu-item"><img class="icones-menu icone-produtos" src="Img/produtosicon.svg" alt="Icone de Produtos"> <a href="produtos.html" class="lista-menu-link">Produtos</a></li>
+                <li class="lista-menu-item"><img class="icones-menu icone-contato" src="Img/contactsicon.svg" alt="Icone de Contato"><a href="contato.html" class="lista-menu-link">Contato</a></li>
+                <li></li><img class="imagem-menu" src="Img/LogoComFundo05.jpeg"></li>
+            </ul>
+           <a href="index.html"> <img class="cabecalho-logo" src="Img/LogoComFundo02.jpeg" alt="Logo da Amarelato"></a>
+           <a href="https://www.instagram.com/amarelato/"> <img class="cabecalho-insta" src="Img/instagramIcon.svg" alt="Logo do instagram"></a>
+        </div>
+    </header>
+
+    <section class="Descricao-inicial">
+        <h2 class="Descriacao-inicial-titulo">Quem Somos?</h2>
+        <p class="Descriacao-inicial-paragrafo">A Amarelato é uma loja de produtos geeks feitos a mão por universitários do curso de design da Unochapecó, nosso intuíto é produzir os mais variados tipos de itens artesanais e colocar um sorriso no rosto das pessoas :D</p>
+    </section>
+
+    <section class="Carrossel-bottons">
+        <h2 class="Carrossel-bottons-titulo">Bottons</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+             <!-- Additional required wrapper -->   
+                <div class="swiper-wrapper">
+             <!-- Slides -->
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol01.jpeg" alt="Botton Da Loja 01"></div>
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol02.jpeg" alt="Botton Da Loja 02"></div>
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol03.jpeg" alt="Botton Da Loja 03"></div>
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol04.jpeg" alt="Botton Da Loja 04"></div>
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol05.jpeg" alt="Botton Da Loja 05"></div>
+                    <div class="swiper-slide"><img class="Img-carossel-botton" src="Img/BottomGiraSol06.jpeg" alt="Botton Da Loja 06"></div>
+                </div>
+             <!-- If we need pagination -->
+                 <div class="swiper-pagination"></div>
+             <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="chaveiros-sec">
+        <h2 class="chvaieros-titulo">Brincos e Chaveiros</h2>
+        <img class="img-chaveiros" src="Img/BrincosEChaveiros01.jpeg" alt="Brincos e Chaveiros da Loja">
+    </section>
+
+    <section class="colares-sec">
+        <h2 class="colares-titulo">Colares</h2>
+        <img class="img-colares" src="Img/Colares01.jpeg" alt="Colares da Loja">
+    </section>
+
+    <section class="desenhos-sec">
+        <h2 class="desenhos-titulo">Desenhos e Prints</h2>
+        <img class="img-desenhos" src="Img/Prints01.jpeg" alt="Desenhos da Loja">
+    </section>
+
+    <section class="final-home">
+        <h2 class="titulo-final-home">E Muito Mais!</h2>
+        <div class="div-final-home">
+            <img class="img-miranha" src="Img/Desenhos03.jpeg" alt="Desenhos do Homem Aranha com Mega Fone">
+            <p class="paragrafo-final-home">Quer saber mais sobre nossos produtos? Não fique com medo de chamar a gente!</p>
+        </div>
+    </section>
+
+    <footer class="rodape-pagina">
+        <section class="pre-rodape">
+            <img class="img-banner-amarelato-rodape" src="Img/LogoComFundo01.jpeg" alt="Banner 01 da Amarelato">
+        </section>
+        <p class="copyright-texto">©Copyright Amarelato - 2023</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        });
+    </script>
+</body>
+
+</html>
